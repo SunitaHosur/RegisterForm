@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+   <div class="main-content">
+       <h1>Register Form</h1>
+            <form name="register" method="post">
+            <label for="fname">Full Name</label><br>
+            <input type="text" id="fname" name="fullname" placeholder="Enter your Full Name" required>
+            <br><br>
+            <label for="phone">Phone No</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your Phone number" required>
+            <br><br>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your Age" required>
+            <br><br>
+            
+            <label for="date">Date of Birth</label><br>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Enter your Email Id" required>
+            <br><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            <br>
+            <br>
+            <label for="country">Country</label><br>
+            <select id="country" name="country" required>
+                <option value="select">Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Japan</option>
+                <option>China</option>
+            </select>
+            <br><br>
+            <div class="content-last">
+            <input type="reset" value="Reset" class="reset">
+            <br><br>
+            <input type="submit" value="Submit" class="submit">
+        </div>
+    </form>
+ 
+        </div>
+
+</body>
+</html>
