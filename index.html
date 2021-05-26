@@ -10,7 +10,7 @@
 <body>
    <div class="main-content">
        <h1>Register Form</h1>
-            <form name="register" method="post">
+            <form name="register" method="GET" enctype="multipart/form-data">
             <label for="fname">Full Name</label><br>
             <input type="text" id="fname" name="fullname" placeholder="Enter your Full Name" required>
             <br><br>
@@ -33,12 +33,21 @@
             <br>
             <label for="country">Country</label><br>
             <select id="country" name="country" required>
-                <option value="select">Select Country</option>
-                <option>India</option>
-                <option>USA</option>
-                <option>Japan</option>
-                <option>China</option>
+                <option>Select Country</option>
+                <option value="IN">India</option>
+                <option value="US">USA</option>
+                <option value="JP">Japan</option>
+                <option value="CN">China</option>
             </select>
+            <br><br>
+            <label for="bio">Bio</label><br>
+            <textarea name="bio" id="bio" cols="49" rows="5"></textarea>
+            <br><br>
+            <label for="file">File</label><br>
+            <input type="file" id="file" name="file">
+            <br><br>
+            <label for="col0r">Choose color </label><br>
+            <input type="color" id="color" name="color">
             <br><br>
             <div class="content-last">
             <input type="reset" value="Reset" class="reset">
